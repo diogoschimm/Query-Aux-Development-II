@@ -8,8 +8,8 @@ Utilize as tabelas de sistema (sys.tables, sys.columns e sys.types) para gerar u
 declare @object_id as int, @table_name varchar(1000)
 
 declare c_tabelas cursor for select object_id, name from sys.tables 
-						 where name not in ('__RefactorLog', 'sysdiagrams')
-						 order by name 
+				 where name not in ('__RefactorLog', 'sysdiagrams')
+				 order by name 
 
 open c_tabelas
 fetch next from c_tabelas into @object_id, @table_name
