@@ -1,4 +1,4 @@
-# Query-Aux-Develpment-II
+# Query-Aux-Development-II
 Contém Querys utilizando tabelas de sistema do SQL Server para Gerar Comandos
 
 ## Comando
