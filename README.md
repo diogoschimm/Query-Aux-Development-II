@@ -77,3 +77,15 @@ close c_tabelas
 deallocate c_tabelas
  
 ```
+
+## Log na tabela principal (dados de criação e última modificação)
+
+```tsql
+ALTER TABLE TBL_NAME
+ADD CreatedById int,
+	CreationDate datetime,
+	CreatedByName varchar(100),
+	ModifiedById int,
+	ModifiedDate datetime,
+	ModifiedByName varchar(100)
+```
